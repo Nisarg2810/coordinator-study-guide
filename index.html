@@ -109,6 +109,19 @@
   footer { margin-top: 60px; color: var(--mute); font-size: 14px; }
   .mono { font-family: "JetBrains Mono", monospace; font-size: 14px; }
   button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+
+.lt{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin-top:22px}
+.lt-h{display:flex;gap:14px;align-items:center;margin-bottom:6px}
+.lt-h b{display:block;font-size:19px;line-height:1.3}.lt-h small{display:block;font:600 12px "JetBrains Mono",monospace;color:var(--mute)}
+.lt-n{flex-shrink:0;width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:700}
+.lt h4{margin-top:16px}
+.lt details{margin-top:14px;border:1px dashed var(--line);border-radius:12px;padding:10px 14px}
+.lt summary{cursor:pointer;font-weight:600;color:var(--blue)}
+.mono-b{font-family:"JetBrains Mono",monospace;font-size:13.5px;white-space:pre-line;overflow-wrap:anywhere}
+.lt-timer{position:sticky;top:70px;z-index:5;display:flex;gap:10px;align-items:center;background:var(--navy);color:#fff;border-radius:14px;padding:10px 16px;margin:16px 0;width:fit-content}
+.lt-timer span{font:700 22px "JetBrains Mono",monospace;min-width:80px;text-align:center}
+.lt-timer button{font:inherit;font-size:14px;border:0;border-radius:999px;padding:6px 14px;cursor:pointer;background:#fff;color:var(--navy)}
+.lt-timer.done span{color:#ffb4a2}
 </style>
 </head>
 <body>
@@ -120,7 +133,7 @@
   <div class="grp">The players</div>
   <a href="#rethink">Rethink, from zero</a><a href="#rpr">Rethink PR + the people</a><a href="#wave">The 10-role hiring wave</a><a href="#client">The new client</a><a href="#sara">Who you're meeting</a>
   <div class="grp">The job, zero to pro</div>
-  <a href="#agency">How an agency works</a><a href="#pesos">PR vs social vs ads</a><a href="#youtube">YouTube Studio, deep dive</a><a href="#bilingual">English + French</a><a href="#dealer">Dealer marketing + the dealer tool</a><a href="#dam">Asset library (DAM)</a><a href="#urgent">Urgent requests</a><a href="#admin">Reports, agendas, notes</a><a href="#social">Social media basics</a><a href="#tools">Tools</a><a href="#worked">★ Worked examples</a>
+  <a href="#agency">How an agency works</a><a href="#pesos">PR vs social vs ads</a><a href="#youtube">YouTube Studio, deep dive</a><a href="#bilingual">English + French</a><a href="#dealer">Dealer marketing + the dealer tool</a><a href="#dam">Asset library (DAM)</a><a href="#urgent">Urgent requests</a><a href="#admin">Reports, agendas, notes</a><a href="#social">Social media basics</a><a href="#tools">Tools</a><a href="#worked">★ Worked examples</a><a href="#live">★ Live tasks she may give</a>
   <div class="grp">The role</div>
   <a href="#jd">Job post, line by line</a><a href="#day">A day in the role</a><a href="#ninety">Your first 90 days</a><a href="#you">Your story + STAR answers</a>
   <div class="grp">The interview</div>
@@ -480,6 +493,171 @@ Brand · Aurora · Model year 2027 · Winter campaign · YouTube · EN or FR · 
   </ol>
 </section>
 
+<section id="live">
+  <h2><span class="n">★</span>Live tasks Sara may give you</h2>
+  <p class="lead">Some interviewers say "let's try something quick" and share a screen, a doc or a file. These are the 12 tasks most likely for this role, and exactly how to do each one. Practise each with the 10-minute timer.</p>
+
+  <div class="lt-timer"><b>Practice timer</b><span id="ltT">10:00</span><button id="ltGo">Start</button><button id="ltR">Reset</button></div>
+
+  <h3>The 6-step method for ANY live task</h3>
+  <ol>
+    <li><b>Repeat it back.</b> "So you'd like me to write the title and description for this video. Is that right?"</li>
+    <li><b>Ask 1 or 2 short questions.</b> "Is there an approved copy doc or legal line I should use? Is this for English, French or both?"</li>
+    <li><b>Say your plan out loud</b> in 3 steps before you start. They are judging how you think, not only the result.</li>
+    <li><b>Do it calmly.</b> Talk while you work: "I'm keeping the title under 70 characters so it doesn't get cut on a phone."</li>
+    <li><b>Check your work</b> out loud: names, dates, numbers, links, spelling, French pair.</li>
+    <li><b>Wrap up in one line</b> and say what you'd do next in real life: "In the real job I'd send this to the account lead for approval before it goes live."</li>
+  </ol>
+  <div class="warn">If you don't know something, say it and show how you'd find it: "I'd check the approved copy doc for that, I wouldn't guess." Never invent a product fact or claim. That answer earns points.</div>
+
+  <div class="grid2" style="margin-top:6px">
+    <div class="card"><span class="tag">Be ready on your laptop</span><ul><li>Google Docs, Google Sheets and Excel open</li><li>YouTube Studio open (your own account is fine)</li><li>Zoom / Teams screen share tested</li><li>Notifications off, other tabs closed</li><li>A notepad for her instructions</li></ul></div>
+    <div class="card"><span class="tag">What she's really checking</span><ul><li>Do you follow instructions exactly?</li><li>Do you catch small mistakes?</li><li>Do you stay calm and organized?</li><li>Do you ask the right questions?</li><li>Do you know when to escalate?</li></ul></div>
+  </div>
+
+  <!-- 1 -->
+  <div class="lt"><div class="lt-h"><span class="lt-n">1</span><div><b>Write the YouTube title, description and tags</b><small>Most likely · 10 minutes</small></div></div>
+    <div class="eg"><b>She says:</b> "Here's a 15-second spot for the Aurora SUV, winter campaign. Write the title, description and tags."</div>
+    <h4>How to do it</h4>
+    <ol><li>Ask: approved copy doc? legal line? link? English only or French too?</li><li>Look at the channel's last 5 titles and copy the pattern.</li><li>Title: <b>Product | Message | Brand</b>, under 70 characters.</li><li>Description: first 2 lines say the main thing (they show in search), then link, then legal line, then 3 hashtags.</li><li>Tags: product name + year, product type, the features, the brand.</li><li>Check: spelling, year, link, character count.</li></ol>
+    <details><summary>Show a model answer</summary><div class="eg mono-b"><b>Title</b> 2027 Aurora SUV | Ready for Winter | Brand Canada
+<b>Description</b> Remote start, heated seats and all-wheel drive. The 2027 Aurora SUV is ready for a Canadian winter.
+Learn more: brand.ca/aurora
+[Approved legal line, pasted exactly]
+#Aurora #SUV #BrandCanada
+<b>Tags</b> 2027 Aurora, Aurora SUV, winter SUV, all-wheel drive SUV, remote start, heated seats, Brand Canada</div></details>
+    <div class="say">"I matched the channel's title pattern, kept it under 70 characters, and put the key message in the first line because that's what people see in search. I left a spot for the approved legal line because I'd never write that myself."</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="lt"><div class="lt-h"><span class="lt-n">2</span><div><b>Rename these messy files</b><small>Very likely · 5 minutes</small></div></div>
+    <div class="eg"><b>She says:</b> "Here are 5 files from the creative team. Rename them so anyone can find them."<br><span class="mono">final FINAL winter vid fr.mp4 · aurora thumb new.png · story2 EN.jpg · winter_15_v2_ENGLISH.mp4 · dealer post square final(1).jpg</span></div>
+    <h4>How to do it</h4>
+    <ol><li>Ask: "Is there a naming rule already? If not, I'll use a simple one and stay consistent."</li><li>Use one order every time: <b>Brand_Product_Campaign_Format_Size_Language_Version_Date</b></li><li>No spaces, no "final", always a version number (V1, V2, V3), date as YYYYMMDD.</li><li>If you can't tell the version, say so and ask. Don't guess.</li></ol>
+    <details><summary>Show a model answer</summary><div class="eg mono-b">BRD_Aurora_Winter_Video_16x9_15s_FR_V3_20261104.mp4
+BRD_Aurora_Winter_Thumbnail_1280x720_EN_V2_20261104.png
+BRD_Aurora_Winter_Story_9x16_EN_V1_20261104.jpg
+BRD_Aurora_Winter_Video_16x9_15s_EN_V2_20261104.mp4
+BRD_Aurora_Winter_DealerPost_1x1_EN_V1_20261104.jpg</div><p>And say: "I'd confirm the version numbers with creative, because 'final FINAL' doesn't tell me which one is approved."</p></details>
+  </div>
+
+  <!-- 3 -->
+  <div class="lt"><div class="lt-h"><span class="lt-n">3</span><div><b>Find the mistakes in this post</b><small>Very likely · 5 minutes</small></div></div>
+    <div class="eg"><b>She says:</b> "This is going live in an hour. Anything wrong?"<br><br><i>"Meet the all-new 2026 Aurora SUV, best-in-class winter performance! Remote start, heated seats and all wheel drive. Learn more at marque.ca/aurora #Aurora #SUV"</i><br><span class="mono">(The brief says: 2027 model year, English post, legal line required.)</span></div>
+    <h4>How to do it</h4>
+    <ol><li>Read it 3 times: once for meaning, once for facts (names, years, numbers, links), once for spelling.</li><li>Compare every fact to the brief.</li><li>List mistakes in order of risk: legal/fact first, then links, then style.</li></ol>
+    <details><summary>Show the answer (6 issues)</summary><ol><li><b>Wrong year:</b> 2026, the brief says 2027.</li><li><b>Unapproved claim:</b> "best-in-class" is a legal claim. Remove it unless it's in the approved copy.</li><li><b>Missing legal line.</b></li><li><b>Wrong link:</b> marque.ca is the French site; English post needs brand.ca/aurora.</li><li><b>"all wheel drive"</b> should be "all-wheel drive" (match the brand's spelling).</li><li><b>Missing brand hashtag</b> if the channel always uses #BrandCanada.</li></ol>
+    <div class="say">"Two of these are risks for the client, the year and the claim, so I'd flag those to the account lead right away and hold the post until they're fixed."</div></details>
+  </div>
+
+  <!-- 4 -->
+  <div class="lt"><div class="lt-h"><span class="lt-n">4</span><div><b>Check the French version</b><small>Likely · 5 minutes</small></div></div>
+    <div class="eg"><b>She says:</b> "Here's the English and French title and description. Does the French look right?" (You don't have to be fluent.)</div>
+    <h4>How to do it: the 8-point check, no fluency needed</h4>
+    <ul class="check"><li><label><input type="checkbox"> It came from the French team or translator (not Google Translate)</label></li><li><label><input type="checkbox"> Same structure as the English title</label></li><li><label><input type="checkbox"> Product name and year are the same (2027 Aurora)</label></li><li><label><input type="checkbox"> Numbers, prices and dates match</label></li><li><label><input type="checkbox"> Link goes to the French page</label></li><li><label><input type="checkbox"> French punctuation: space before : ? ! (e.g. "En savoir plus :")</label></li><li><label><input type="checkbox"> Accents are there (é, è, à) and SUV is "VUS"</label></li><li><label><input type="checkbox"> French legal line is included</label></li></ul>
+    <div class="say">"I can't approve the French writing myself, so I check everything that can go wrong without fluency: names, numbers, links, punctuation and the legal line. Anything about the wording goes back to the French team."</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="lt"><div class="lt-h"><span class="lt-n">5</span><div><b>Upload a video in YouTube Studio (screen share)</b><small>Possible · 10 minutes</small></div></div>
+    <div class="eg"><b>She says:</b> "Show me how you'd upload this video." (She may ask you to share your screen in YouTube Studio.)</div>
+    <h4>Click by click</h4>
+    <ol><li><b>Create → Upload videos</b> → choose the file.</li><li><b>Details:</b> title, description, thumbnail (1280×720), playlist, audience "No, it's not made for kids".</li><li><b>Show more:</b> tags, language (English or French), caption certification, category (Autos &amp; Vehicles).</li><li><b>Video elements:</b> add subtitles (upload SRT) and an end screen.</li><li><b>Checks:</b> wait for copyright check.</li><li><b>Visibility:</b> Private first, then Schedule for the approved date and time.</li><li>Repeat for the French video, scheduled at the same time.</li></ol>
+    <div class="say">"I always upload as private first, check everything on my phone, then schedule. English and French go live together."</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="lt"><div class="lt-h"><span class="lt-n">6</span><div><b>Tag these assets in the asset library</b><small>Likely · 5 minutes</small></div></div>
+    <div class="eg"><b>She says:</b> "How would you tag this winter video so a dealer or teammate can find it in 2 seconds?"</div>
+    <h4>How to do it</h4>
+    <p>Tag by the questions people ask when they search: <b>What product? Which campaign? What format? What size? Which language? Is it approved? Until when can it be used?</b></p>
+    <details><summary>Show a model answer</summary><div class="eg mono-b">Product: Aurora SUV · Model year: 2027
+Campaign: Winter 2026
+Format: Video · Length: 15s · Size: 16x9
+Language: EN (pair: FR file linked)
+Status: Approved · Version: V3
+Usage: Social + YouTube + Dealers · Expires: 2027-03-31
+Rights: Music licensed until 2027-03-31</div><p>Say: "The expiry date matters most. If the music license ends, the file must come down everywhere, including dealer pages."</p></details>
+  </div>
+
+  <!-- 7 -->
+  <div class="lt"><div class="lt-h"><span class="lt-n">7</span><div><b>Urgent: award news, post in 2 hours</b><small>Very likely as a scenario · talk it through</small></div></div>
+    <div class="eg"><b>She says:</b> "The client just won an award. They want a post on Instagram, LinkedIn and YouTube community in 2 hours. What do you do?"</div>
+    <h4>How to answer (timeline)</h4>
+    <table><thead><tr><th>Time</th><th>What you do</th></tr></thead><tbody>
+      <tr><td>0 to 10 min</td><td>Confirm the facts: award name, exact wording, is it public yet (embargo?), who approves. Tell the account lead you're on it.</td></tr>
+      <tr><td>10 to 40 min</td><td>Get the approved copy and visual from creative/PR. Ask French team for the French version at the same time.</td></tr>
+      <tr><td>40 to 70 min</td><td>Prepare posts per platform (sizes, captions, tags). Proofread. Send all in one approval message.</td></tr>
+      <tr><td>70 to 100 min</td><td>Fix feedback. Get written approval.</td></tr>
+      <tr><td>100 to 120 min</td><td>Schedule or post, EN + FR together. Check live posts. Tell the team it's done; log it.</td></tr>
+    </tbody></table>
+    <div class="say">"Fast, but nothing skips approval. I'd work in parallel: copy, visual and French at the same time, so approval is the only thing we wait for."</div>
+  </div>
+
+  <!-- 8 -->
+  <div class="lt"><div class="lt-h"><span class="lt-n">8</span><div><b>Take notes, then send the recap</b><small>Likely · 10 minutes</small></div></div>
+    <div class="eg"><b>She says:</b> "I'll talk through a quick meeting for 2 minutes. Take notes, then write the recap email."</div>
+    <h4>How to do it</h4>
+    <ol><li>While she talks, write only 3 things: <b>decisions</b>, <b>actions (who + when)</b>, <b>open questions</b>.</li><li>If something is unclear, ask at the end: "Who owns the thumbnail?"</li><li>Write the recap in that exact order. Short lines. Dates as days ("Wed Nov 4").</li></ol>
+    <details><summary>Show a model recap</summary><div class="eg mono-b"><b>Subject:</b> Recap: Weekly social, Nov 4
+
+Hi team, quick recap:
+
+<b>Decisions</b>
+· Winter video goes live Thu 10 AM, EN + FR together
+
+<b>Actions</b>
+· Upload + schedule EN and FR videos · Durva · Wed
+· Send FR captions · French team · Tue
+· Approve thumbnail · Account lead · Tue
+
+<b>Open questions</b>
+· Do dealers get the video this week or next?
+
+Next meeting: Wed Nov 11. Let me know if I missed anything.
+Durva</div></details>
+  </div>
+
+  <!-- 9 -->
+  <div class="lt"><div class="lt-h"><span class="lt-n">9</span><div><b>Prioritize these 6 requests</b><small>Very likely · 5 minutes</small></div></div>
+    <div class="eg"><b>She says:</b> "It's Monday 9 AM. These all land at once. What order?"<br>A. Client wants last month's YouTube numbers by Friday<br>B. A video scheduled for 11 AM today has the wrong thumbnail<br>C. Account lead needs an agenda for tomorrow's meeting<br>D. Dealers say the portal's winter post link is broken<br>E. Monthly asset library clean-up<br>F. French captions for Thursday's video haven't arrived</div>
+    <h4>How to decide: 3 questions</h4>
+    <ol><li><b>Is it live or going live soon?</b> (public mistakes first)</li><li><b>Does someone else wait on it?</b> (unblock people early)</li><li><b>When is it due?</b></li></ol>
+    <details><summary>Show the order</summary><ol><li><b>B</b> wrong thumbnail going live at 11 AM: fix now, or pause the schedule.</li><li><b>D</b> broken dealer link: dealers are using it right now.</li><li><b>F</b> chase French captions: a quick message so Thursday stays safe.</li><li><b>C</b> agenda for tomorrow: 20 minutes this afternoon.</li><li><b>A</b> YouTube numbers: start Wednesday, due Friday.</li><li><b>E</b> clean-up: schedule it for Friday afternoon.</li></ol>
+    <div class="say">"Anything public or going live comes first, then whatever unblocks other people, then by due date. And I'd tell the account lead the order so nobody's surprised."</div></details>
+  </div>
+
+  <!-- 10 -->
+  <div class="lt"><div class="lt-h"><span class="lt-n">10</span><div><b>Build a quick tracker in Sheets or Excel</b><small>Possible · 10 minutes</small></div></div>
+    <div class="eg"><b>She says:</b> "Make a simple tracker for this month's YouTube uploads."</div>
+    <h4>How to do it</h4>
+    <ol><li>Columns: <b>Video · Language · Pair (EN/FR) · Status · Owner · Approval date · Publish date · Link · Notes</b></li><li>Status as a dropdown: Not started / In progress / Waiting approval / Scheduled / Live. (Data → Data validation → Dropdown.)</li><li>Freeze the top row. Turn on filters.</li><li>Colour: Live = green, Waiting = yellow (Format → Conditional formatting).</li><li>Add one formula to show you can: <span class="mono">=COUNTIF(D:D,"Live")</span> for "videos live this month".</li></ol>
+    <div class="say">"The pair column is my favourite: it makes it impossible to forget the French version."</div>
+  </div>
+
+  <!-- 11 -->
+  <div class="lt"><div class="lt-h"><span class="lt-n">11</span><div><b>Write the weekly status report</b><small>Likely · 5 minutes</small></div></div>
+    <div class="eg"><b>She says:</b> "Here are my messy notes from the week. Turn them into a status report for the account lead."</div>
+    <h4>How to do it</h4>
+    <p>Always 5 headings, in this order: <b>Done · In progress · Waiting on · At risk · Next week.</b> One line each item. Names and dates on everything.</p>
+    <details><summary>Show a model answer</summary><div class="eg mono-b"><b>Done:</b> 4 videos live (EN + FR); dealer winter pack uploaded
+<b>In progress:</b> December asset library audit
+<b>Waiting on:</b> FR captions, holiday video (French team, due Tue)
+<b>At risk:</b> holiday video needs approval by Thu to keep the date
+<b>Next week:</b> 2 uploads, dealer note, audit summary</div></details>
+    <div class="say">"I always put 'at risk' near the top, so the lead sees problems while there's still time to fix them."</div>
+  </div>
+
+  <!-- 12 -->
+  <div class="lt"><div class="lt-h"><span class="lt-n">12</span><div><b>Audit a YouTube channel: what would you improve?</b><small>Possible · 10 minutes</small></div></div>
+    <div class="eg"><b>She says:</b> "Open this brand's YouTube channel. What would you fix first?"</div>
+    <h4>What to look at, in order (5 minutes)</h4>
+    <ol><li><b>Titles:</b> one pattern? brand name on every title? cut off on a phone?</li><li><b>Pairs:</b> does every English video have its French version?</li><li><b>Thumbnails:</b> consistent style? readable on a phone?</li><li><b>Descriptions:</b> key message in the first 2 lines? links working?</li><li><b>Playlists:</b> are videos organized by product or campaign?</li><li><b>Captions:</b> on every video? edited, not just auto?</li><li><b>Rhythm:</b> regular uploads or long gaps?</li></ol>
+    <div class="say">"I'd start with three quick wins: one title pattern for every new upload, a playlist per product, and making sure every video has its French pair and edited captions. Then I'd fix older videos in a monthly clean-up."</div>
+    <div class="warn">If she opens the client's real channel, comment on facts you can see, kindly. Never say "this is bad". Say "here's an easy win".</div>
+  </div>
+</section>
+
 <!-- ================= THE ROLE ================= -->
 <section id="jd">
   <h2><span class="n">16</span>The job post, line by line</h2>
@@ -595,6 +773,13 @@ Brand · Aurora · Model year 2027 · Winter campaign · YouTube · EN or FR · 
 <script>
 (() => {
   const $ = id => document.getElementById(id);
+
+  // live task timer
+  (() => { let t = 600, iv = null; const el = $("ltT"), box = el.parentNode;
+    const draw = () => { el.textContent = String(Math.floor(t/60)).padStart(2,"0") + ":" + String(t%60).padStart(2,"0"); box.classList.toggle("done", t === 0); };
+    $("ltGo").onclick = () => { if (iv) { clearInterval(iv); iv = null; $("ltGo").textContent = "Start"; return; } $("ltGo").textContent = "Pause"; iv = setInterval(() => { if (t > 0) { t--; draw(); } else { clearInterval(iv); iv = null; $("ltGo").textContent = "Start"; } }, 1000); };
+    $("ltR").onclick = () => { clearInterval(iv); iv = null; t = 600; $("ltGo").textContent = "Start"; draw(); };
+  })();
   // progress + toc
   const links = [...document.querySelectorAll("nav.toc a")];
   const secs = links.map(a => document.querySelector(a.getAttribute("href"))).filter(Boolean);
