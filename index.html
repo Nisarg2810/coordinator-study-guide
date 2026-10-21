@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Social Coordinator Study Guide</title>
+<meta name="description" content="A plain-English study guide for the Coordinator, Social role at Rethink PR: the agency, the team, YouTube, bilingual content, dealer tools, asset libraries and interview questions.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #fbfaf7; --card: #fff; --ink: #1b1d22; --mute: #5d6470; --line: #e6e3dc; --blue: #2170f1; --blue-50: #eaf1fe; --navy: #0b1020; --green: #12805c; --green-50: #e3f5ee; --amber: #a15c07; --amber-50: #fdf3e2; --red: #c2410c; --violet: #6d28d9; --violet-50: #f1ebfd; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+  body { background: var(--bg); color: var(--ink); font: 400 17px/1.75 "Lexend", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--blue); }
+  b, strong { font-weight: 600; }
+  .top { position: sticky; top: 0; z-index: 20; background: rgba(251,250,247,.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .top .in { width: min(1240px, 100% - 32px); margin: 0 auto; height: 60px; display: flex; align-items: center; gap: 14px; }
+  .top b { font-weight: 700; }
+  .top .bar { flex: 1; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; max-width: 260px; margin-left: auto; }
+  .top .bar i { display: block; height: 100%; width: 0; background: var(--blue); }
+  .menu { display: none; border: 1px solid var(--line); background: #fff; border-radius: 10px; padding: 6px 12px; font: inherit; font-size: 15px; cursor: pointer; }
+  .layout { width: min(1240px, 100% - 32px); margin: 0 auto; display: grid; grid-template-columns: 250px 1fr; gap: 40px; }
+  nav.toc { position: sticky; top: 76px; align-self: start; max-height: calc(100vh - 92px); overflow-y: auto; padding: 18px 0 30px; font-size: 14.5px; }
+  nav.toc a { display: block; text-decoration: none; color: var(--mute); padding: 5px 10px; border-radius: 8px; line-height: 1.4; }
+  nav.toc a:hover { background: #fff; color: var(--ink); }
+  nav.toc a.on { background: var(--blue-50); color: var(--blue); font-weight: 600; }
+  nav.toc .grp { font: 700 11px "JetBrains Mono", monospace; letter-spacing: .1em; color: #9aa0a8; text-transform: uppercase; margin: 16px 10px 4px; }
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    nav.toc { display: none; position: fixed; inset: 60px 0 0 0; max-height: none; background: var(--bg); z-index: 15; padding: 16px; }
+    nav.toc.open { display: block; }
+    .menu { display: inline-block; }
+  }
+  main { padding: 34px 0 80px; min-width: 0; }
+  .hero { background: var(--navy); color: #fff; border-radius: 24px; padding: 40px; }
+  .hero h1 { font-size: clamp(30px, 4.4vw, 46px); line-height: 1.15; font-weight: 600; letter-spacing: -.02em; }
+  .hero p { margin-top: 14px; color: #c8d0e6; max-width: 62ch; }
+  .hero .k { font: 700 12px "JetBrains Mono", monospace; letter-spacing: .12em; color: #8fb4ff; }
+  .plan { margin-top: 22px; display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; }
+  .plan div { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); border-radius: 14px; padding: 12px 14px; font-size: 15px; line-height: 1.5; }
+  .plan b { display: block; color: #8fb4ff; font-size: 13px; }
+  section { margin-top: 56px; }
+  h2 { font-size: clamp(26px, 3.2vw, 34px); line-height: 1.2; font-weight: 600; letter-spacing: -.015em; }
+  h2 .n { display: inline-block; font: 700 13px "JetBrains Mono", monospace; color: var(--blue); background: var(--blue-50); border-radius: 8px; padding: 3px 8px; margin-right: 10px; vertical-align: 6px; }
+  h3 { font-size: 21px; font-weight: 600; margin: 28px 0 8px; line-height: 1.35; }
+  h4 { font-size: 17px; font-weight: 600; margin: 18px 0 4px; }
+  p { margin-top: 10px; max-width: 72ch; }
+  ul, ol { margin: 10px 0 0 22px; max-width: 72ch; } li { margin-top: 6px; }
+  .lead { font-size: 19px; color: #333; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px 24px; margin-top: 16px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; } .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  @media (max-width: 760px) { .grid2, .grid3 { grid-template-columns: 1fr; } }
+  .grid2 .card, .grid3 .card { margin-top: 0; }
+  .simple { background: var(--green-50); border-left: 4px solid var(--green); border-radius: 0 14px 14px 0; padding: 14px 18px; margin-top: 14px; }
+  .simple::before { content: "IN SIMPLE WORDS"; display: block; font: 700 11px "JetBrains Mono", monospace; letter-spacing: .1em; color: var(--green); margin-bottom: 4px; }
+  .eg { background: var(--blue-50); border-left: 4px solid var(--blue); border-radius: 0 14px 14px 0; padding: 14px 18px; margin-top: 14px; }
+  .eg::before { content: "EXAMPLE"; display: block; font: 700 11px "JetBrains Mono", monospace; letter-spacing: .1em; color: var(--blue); margin-bottom: 4px; }
+  .say { background: var(--violet-50); border-left: 4px solid var(--violet); border-radius: 0 14px 14px 0; padding: 14px 18px; margin-top: 14px; }
+  .say::before { content: "SAY IT LIKE THIS"; display: block; font: 700 11px "JetBrains Mono", monospace; letter-spacing: .1em; color: var(--violet); margin-bottom: 4px; }
+  .warn { background: var(--amber-50); border-left: 4px solid var(--amber); border-radius: 0 14px 14px 0; padding: 14px 18px; margin-top: 14px; }
+  .warn::before { content: "WATCH OUT"; display: block; font: 700 11px "JetBrains Mono", monospace; letter-spacing: .1em; color: var(--amber); margin-bottom: 4px; }
+  .tag { display: inline-block; font: 700 11px "JetBrains Mono", monospace; letter-spacing: .06em; padding: 3px 8px; border-radius: 6px; background: var(--blue-50); color: var(--blue); text-transform: uppercase; }
+  table { width: 100%; border-collapse: collapse; font-size: 15.5px; margin-top: 12px; }
+  th { text-align: left; font: 700 11px "JetBrains Mono", monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--mute); padding: 10px; border-bottom: 2px solid var(--ink); }
+  td { padding: 11px 10px; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.6; }
+  .scroll { overflow-x: auto; }
+  /* funnel */
+  .funnel { display: grid; gap: 6px; margin-top: 16px; }
+  .funnel div { margin: 0 auto; border-radius: 10px; color: #fff; padding: 10px 16px; text-align: center; font-size: 15px; line-height: 1.4; }
+  .funnel small { display: block; opacity: .85; font-size: 13px; }
+  /* JD blocks */
+  .jd { background: #fff; border: 1px solid var(--line); border-radius: 18px; margin-top: 16px; overflow: hidden; }
+  .jd .q { background: var(--navy); color: #fff; padding: 14px 20px; font-size: 16px; line-height: 1.55; }
+  .jd .q::before { content: "THE JOB POST SAYS"; display: block; font: 700 11px "JetBrains Mono", monospace; letter-spacing: .1em; color: #8fb4ff; margin-bottom: 4px; }
+  .jd .b { padding: 6px 20px 18px; display: grid; grid-template-columns: 150px 1fr; gap: 4px 16px; }
+  .jd .b > div:nth-child(odd) { font: 700 11px "JetBrains Mono", monospace; letter-spacing: .06em; color: var(--mute); text-transform: uppercase; padding-top: 14px; }
+  .jd .b > div:nth-child(even) { padding-top: 10px; }
+  @media (max-width: 700px) { .jd .b { grid-template-columns: 1fr; } .jd .b > div:nth-child(even) { padding-top: 0; } }
+  /* Q&A */
+  details { background: #fff; border: 1px solid var(--line); border-radius: 14px; margin-top: 10px; }
+  summary { cursor: pointer; padding: 14px 18px; font-weight: 600; list-style: none; display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; font-size: 22px; color: var(--blue); line-height: 1; }
+  details[open] summary::after { content: "−"; }
+  details > div { padding: 0 18px 16px; }
+  .lvl { font: 700 10px "JetBrains Mono", monospace; letter-spacing: .08em; padding: 2px 7px; border-radius: 6px; margin-right: 8px; vertical-align: 2px; }
+  .l1 { background: var(--green-50); color: var(--green); } .l2 { background: var(--blue-50); color: var(--blue); } .l3 { background: var(--violet-50); color: var(--violet); } .l4 { background: #fde8e8; color: var(--red); }
+  /* glossary + cards */
+  .gsearch { width: 100%; font: inherit; padding: 12px 16px; border: 1px solid var(--line); border-radius: 12px; background: #fff; margin-top: 12px; }
+  .gloss { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 10px; margin-top: 12px; }
+  .gloss div { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; font-size: 15px; line-height: 1.6; }
+  .gloss b { display: block; font-size: 16px; } .gloss span.c { font: 700 10px "JetBrains Mono", monospace; color: var(--mute); letter-spacing: .08em; }
+  .fc { margin-top: 14px; display: grid; justify-items: center; gap: 12px; }
+  .flip { width: min(560px, 100%); height: 230px; perspective: 1200px; cursor: pointer; }
+  .flip .in { position: relative; width: 100%; height: 100%; transition: transform .5s; transform-style: preserve-3d; }
+  .flip.on .in { transform: rotateY(180deg); }
+  .flip .f, .flip .bk { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 20px; display: grid; place-items: center; text-align: center; padding: 26px; }
+  .flip .f { background: var(--navy); color: #fff; font-size: 28px; font-weight: 600; }
+  .flip .f small { display: block; font: 700 11px "JetBrains Mono", monospace; color: #8fb4ff; letter-spacing: .1em; margin-top: 10px; }
+  .flip .bk { background: #fff; border: 2px solid var(--blue); transform: rotateY(180deg); font-size: 17px; line-height: 1.6; }
+  .fcb { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+  .fcb button { font: inherit; font-size: 15px; border: 1px solid var(--line); background: #fff; border-radius: 500px; padding: 8px 16px; cursor: pointer; }
+  .fcb button.p { background: var(--blue); color: #fff; border-color: var(--blue); }
+  .check li { list-style: none; margin-left: -22px; }
+  .check label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+  .check input { margin-top: 7px; accent-color: var(--blue); width: 17px; height: 17px; }
+  footer { margin-top: 60px; color: var(--mute); font-size: 14px; }
+  .mono { font-family: "JetBrains Mono", monospace; font-size: 14px; }
+  button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="top"><div class="in"><button class="menu" id="menu">☰ Sections</button><b>Social Coordinator Study Guide</b><div class="bar"><i id="prog"></i></div></div></div>
+<div class="layout">
+<nav class="toc" id="toc">
+  <div class="grp">Start</div>
+  <a href="#start">How to use this guide</a>
+  <div class="grp">The players</div>
+  <a href="#rethink">Rethink, from zero</a><a href="#rpr">Rethink PR + the people</a><a href="#wave">The 10-role hiring wave</a><a href="#client">The new client</a><a href="#sara">Who you're meeting</a>
+  <div class="grp">The job, zero to pro</div>
+  <a href="#agency">How an agency works</a><a href="#pesos">PR vs social vs ads</a><a href="#youtube">YouTube Studio, deep dive</a><a href="#bilingual">English + French</a><a href="#dealer">Dealer marketing + the dealer tool</a><a href="#dam">Asset library (DAM)</a><a href="#urgent">Urgent requests</a><a href="#admin">Reports, agendas, notes</a><a href="#social">Social media basics</a><a href="#tools">Tools</a>
+  <div class="grp">The role</div>
+  <a href="#jd">Job post, line by line</a><a href="#day">A day in the role</a><a href="#ninety">Your first 90 days</a><a href="#you">Your story + STAR answers</a>
+  <div class="grp">The interview</div>
+  <a href="#qa">Questions they may ask</a><a href="#ask">Questions you ask</a><a href="#money">Salary + logistics</a><a href="#after">After the call</a>
+  <div class="grp">Practice</div>
+  <a href="#gloss">Glossary</a><a href="#cards">Flashcards</a>
+</nav>
+<main>
+
+<header class="hero" id="start">
+  <div class="k">PLAIN-ENGLISH STUDY GUIDE · COORDINATOR, SOCIAL · RETHINK PR</div>
+  <h1>Everything for the interview, from zero to pro.</h1>
+  <p>The agency, the team, the new client, every line of the job, YouTube and asset work explained simply, and every question they may ask. Read once top to bottom, then practise with the flashcards.</p>
+  <div class="plan">
+    <div><b>15 MIN</b>"The players": Rethink, Rethink PR, the hiring wave, who you're meeting.</div>
+    <div><b>25 MIN</b>YouTube Studio, English + French, the dealer tool and the asset library.</div>
+    <div><b>15 MIN</b>The job post line by line and a day in the role.</div>
+    <div><b>25 MIN</b>Say every interview answer out loud.</div>
+    <div><b>10 MIN</b>Flashcards. Then breathe. 🙂</div>
+  </div>
+</header>
+
+<!-- ================= PLAYERS ================= -->
+<section id="rethink">
+  <h2><span class="n">01</span>Rethink, from zero</h2>
+  <div class="simple">Rethink is an advertising agency. Big brands pay them to create ads and campaigns that people talk about.</div>
+  <div class="grid2" style="margin-top:16px">
+    <div class="card"><span class="tag">The basics</span><ul><li>Founded in <b>1999</b> in Vancouver by Chris Staples, Ian Grais and Tom Shepansky</li><li>Offices: <b>Vancouver, Toronto, Montreal</b> and New York</li><li><b>Independent:</b> owned by its partners, not a global holding company</li><li>Toronto office: <b>720 King St. W.</b></li></ul></div>
+    <div class="card"><span class="tag">Famous for</span><ul><li>Simple, smart, funny ideas</li><li><b>Cannes Lions 2026:</b> Independent Agency of the Year + Independent Network of the Year</li><li>A <b>Grand Prix</b> for Kraft Heinz ("Look Familiar?")</li><li>IKEA Canada work like "Sleep Talk Reviews"</li></ul></div>
+  </div>
+  <h3>Clients you should know</h3>
+  <p>Heinz / Kraft Heinz, IKEA Canada, Molson Coors, A&amp;W, McCain, WestJet, Scotiabank, Tangerine.</p>
+  <h3>Their promise to staff (from the job post)</h3>
+  <p>"You will do the best work of your career." They want people who are <b>interested and interesting, relentless, responsible and respectful</b>, and who have a "visceral discomfort with the status quo" (they never settle).</p>
+  <div class="say">"Rethink is Canada's best-known independent agency. It just won Independent Agency of the Year at Cannes, and Rethink PR is the newer team built around ideas that earn attention. That's exactly where I want to start."</div>
+</section>
+
+<section id="rpr">
+  <h2><span class="n">02</span>Rethink PR and the people</h2>
+  <div class="simple">Rethink PR is the public relations team inside Rethink. PR means getting brands into the news and onto social media for free ("earned" attention), instead of paying for ads.</div>
+  <ul>
+    <li><b>Launched:</b> November 2024 as a full-service PR practice. It grew from "Brand Narrative", started in 2022.</li>
+    <li><b>Leaders:</b> Sean McDonald (Global Chief Strategy Officer) and <b>Meredith Burns</b> (Head of Public Relations, previously VP at Hill+Knowlton). Meredith is who the page was made for.</li>
+    <li><b>Clients:</b> always-on for Tangerine and A&amp;W; projects for Molson, McCain, WestJet and Scotiabank; Purdys Chocolatier too.</li>
+    <li><b>Year one:</b> about 30% revenue growth, six new people, two promotions (including Sara).</li>
+  </ul>
+  <div class="eg">"Always-on" means the team works for that client every week, all year. "Project" means one campaign at a time.</div>
+</section>
+
+<section id="wave">
+  <h2><span class="n">03</span>The 10-role hiring wave</h2>
+  <p class="lead">Rethink posted that it's adding 10 roles across PR and Social. Agencies don't do that for small work: it usually means a big new client that needs an always-on social team.</p>
+  <div class="scroll"><table><thead><tr><th>Role</th><th>What they do</th><th>Why so many</th></tr></thead><tbody>
+    <tr><td><b>Account Director, Social (2)</b></td><td>Senior leads who run a client's social and the relationship</td><td>Two suggests several brands or channel groups</td></tr>
+    <tr><td><b>Strategy Director, Social</b></td><td>Decides the big social plan: what, why, for whom, how to measure</td><td>A big brand needs one clear strategy</td></tr>
+    <tr><td><b>Manager, Public Relations</b></td><td>Media relations, announcements, press releases, awards</td><td>Lots of news to share</td></tr>
+    <tr><td><b>Coordinator, Social</b> (you)</td><td>The organizer: uploads, asset library, dealer tool, schedules, notes, reports</td><td>Everyone else creates work; you keep it moving</td></tr>
+    <tr><td><b>Community Manager (3)</b></td><td>Replies to comments and DMs, watches conversations</td><td>Three suggests many conversations, likely English and French</td></tr>
+    <tr><td><b>Content Creator</b></td><td>Quick social videos, photos, Reels</td><td>Social needs fast, native content</td></tr>
+    <tr><td><b>Data Analyst</b></td><td>Tracks results and builds reports</td><td>Big clients want proof every month</td></tr>
+  </tbody></table></div>
+  <div class="say">"I saw Rethink is adding ten roles across PR and Social. It sounds like a big new team is forming, and I'd love to be the coordinator who keeps it organized, so the strategists, community managers and creators can focus on their work."</div>
+</section>
+
+<section id="client">
+  <h2><span class="n">04</span>The new client</h2>
+  <div class="warn">Helena shared the client's name privately. Keep it private: never write it in emails, posts or anywhere public. In the call, let Sara share what she can.</div>
+  <p>The job post tells you a lot about the client even without the name:</p>
+  <ul>
+    <li><b>Dealers:</b> the brand sells through local dealerships, so it needs a <b>dealer asset tool</b> where dealers download approved posts.</li>
+    <li><b>English and French:</b> a national Canadian brand with Quebec customers.</li>
+    <li><b>YouTube:</b> lots of video: product spots, launches, stories, often posted twice (one English, one French).</li>
+    <li><b>Breaking announcements and awards:</b> launches, product news, awards, sometimes urgent statements.</li>
+    <li><b>Strict tagging:</b> many products, versions, campaigns, sizes and two languages, so naming must be perfect.</li>
+  </ul>
+  <h3>How a big Canadian brand runs bilingual YouTube (a public example)</h3>
+  <p>Many national brands post every video twice: once in English, once in French, often on one channel, sometimes with a separate French Instagram account. Look at a bilingual brand channel before the call and notice:</p>
+  <ul><li>Do English and French titles follow the same pattern?</li><li>Does every title end with the brand name?</li><li>Are French titles proofread (spaces, accents)?</li><li>Does every video have its pair in the other language?</li><li>How regular are the uploads?</li></ul>
+  <div class="say">"I looked at how bilingual brands run YouTube. The small things are what make it professional: one title pattern per language, the brand tag on every video, a French proofread, and nothing going live without its pair."</div>
+</section>
+
+<section id="sara">
+  <h2><span class="n">05</span>Who you're meeting: Sara Lemmermeyer</h2>
+  <div class="simple">Sara is the senior person in charge of a group of client accounts at Rethink PR. If a client is a big ship, she's the captain.</div>
+  <ul>
+    <li><b>Title:</b> Group Account Director, Rethink PR, Toronto. Account director at launch (2024), promoted to Group Account Director (Oct 2025).</li>
+    <li><b>Her work:</b> Molson Coors, including <b>"Molson See My Name"</b> (PR Campaign of the Year) and Coors Light work in 2026.</li>
+  </ul>
+  <h3>What a Group Account Director does</h3>
+  <ol><li><b>Client relationship:</b> keeps the client happy and trusting.</li><li><b>Leads the team:</b> who does what, quality, timing.</li><li><b>Strategy:</b> the campaigns and the sensitive moments.</li><li><b>Business:</b> budget, hours, scope, growing the account.</li></ol>
+  <h3>What she wants from you</h3>
+  <p>A coordinator she can trust with the details: organized, accurate, fast, calm under pressure, easy to work with, eager to learn.</p>
+  <div class="say">"My job is to make your team's life easier, so you can focus on the client and the big ideas."</div>
+</section>
+
+<!-- ================= ZERO TO PRO ================= -->
+<section id="agency">
+  <h2><span class="n">06</span>How an agency works</h2>
+  <div class="scroll"><table><thead><tr><th>Team</th><th>What they do</th></tr></thead><tbody>
+    <tr><td><b>Account (client service)</b></td><td>Runs the client relationship, timelines, budgets. Sara's world.</td></tr>
+    <tr><td><b>Strategy</b></td><td>Research and the plan: who to reach, what to say, why.</td></tr>
+    <tr><td><b>Creative</b></td><td>Writers (copywriters) and designers (art directors) who make the ideas.</td></tr>
+    <tr><td><b>Production</b></td><td>Turns ideas into real videos, photos and files.</td></tr>
+    <tr><td><b>PR</b></td><td>Media, announcements, earned attention.</td></tr>
+    <tr><td><b>Social</b></td><td>Posting, community, content, reporting.</td></tr>
+  </tbody></table></div>
+  <h3>Words you'll hear</h3>
+  <ul><li><b>Retainer:</b> the client pays monthly for ongoing work.</li><li><b>Scope:</b> what the client is paying for. Extra work is "out of scope".</li><li><b>Brief:</b> the document that explains a task.</li><li><b>Deck:</b> a slide presentation.</li><li><b>Approvals / sign-off:</b> the client says yes before anything goes live.</li><li><b>Deliverables:</b> the finished things you hand over.</li><li><b>Hot list / WIP:</b> the list of work in progress, reviewed in meetings.</li></ul>
+</section>
+
+<section id="pesos">
+  <h2><span class="n">07</span>PR vs social vs advertising</h2>
+  <table><thead><tr><th>Type</th><th>Meaning</th><th>Example</th></tr></thead><tbody>
+    <tr><td><b>Paid</b></td><td>You pay for space</td><td>TV ads, YouTube ads, sponsored posts</td></tr>
+    <tr><td><b>Earned</b></td><td>Others talk about you for free</td><td>News articles, people sharing, awards (PR's world)</td></tr>
+    <tr><td><b>Shared</b></td><td>Social media conversation</td><td>Comments, shares, creators</td></tr>
+    <tr><td><b>Owned</b></td><td>Channels the brand controls</td><td>Website, YouTube channel, Instagram account</td></tr>
+  </tbody></table>
+  <p>Your role sits mostly in <b>owned</b> (the YouTube channel) and <b>shared</b> (social assets for dealers), supporting <b>earned</b> news when it breaks.</p>
+</section>
+
+<section id="youtube">
+  <h2><span class="n">08</span>YouTube Studio, deep dive</h2>
+  <div class="simple">YouTube Studio is the back office of a YouTube channel. Everything about a video is set there before it goes live.</div>
+  <h3>Uploading a video, step by step</h3>
+  <ol>
+    <li><b>Get the final, approved file.</b> Not a review version. Check the file name and version number.</li>
+    <li><b>Upload</b> in YouTube Studio (Create → Upload videos).</li>
+    <li><b>Title:</b> clear, starts with what it is, follows the brand pattern. Example: "All-New Model X | Feature | Brand Canada".</li>
+    <li><b>Description:</b> the first two lines matter most (they show in search). Add links and any required legal lines.</li>
+    <li><b>Thumbnail:</b> the cover image. Must be readable on a phone, on-brand, the right size (1280×720).</li>
+    <li><b>Playlist:</b> group it with similar videos (by product or series).</li>
+    <li><b>Audience setting:</b> "not made for kids" for brand ads.</li>
+    <li><b>Tags and keywords:</b> help search. Product names, model year, topics.</li>
+    <li><b>Captions (subtitles):</b> upload an SRT file in English, and in French for the French version. Check timing and spelling.</li>
+    <li><b>End screen and cards:</b> point viewers to the next video or the website.</li>
+    <li><b>Visibility:</b> Private (only you), Unlisted (anyone with the link, good for reviews), Public, or Scheduled for a set time.</li>
+    <li><b>Final check</b> on a phone, then share the link with the team and log it.</li>
+  </ol>
+  <h3>Words to know</h3>
+  <ul><li><b>Metadata:</b> all the information about a video (title, description, tags, category).</li><li><b>SRT:</b> a caption file format.</li><li><b>Shorts:</b> vertical videos under a minute.</li><li><b>Premiere:</b> a scheduled public first showing.</li><li><b>Analytics:</b> views, watch time, audience, in YouTube Studio.</li></ul>
+  <div class="say">"Before any video goes live: approved final file, title, description and tags in both languages, captions in both languages checked, thumbnail readable on a phone, playlist and end screen set, visibility and time confirmed, link shared with the team."</div>
+</section>
+
+<section id="bilingual">
+  <h2><span class="n">09</span>English and French</h2>
+  <ul>
+    <li><b>Why:</b> Canada is bilingual, and Quebec requires French in business communication. National brands publish in both.</li>
+    <li><b>How it usually works:</b> a <b>French team or translator</b> writes or adapts French text. You don't translate yourself; you make sure the right approved French version goes up.</li>
+    <li><b>Adapt, don't just translate:</b> French copy is often adapted to sound natural, not word for word.</li>
+    <li><b>Typography:</b> French puts a space before some punctuation (: ; ! ?) and uses accents (é, è, à). Small errors look sloppy, so proofread.</li>
+    <li><b>The pair rule:</b> nothing goes live in one language without the other being ready (unless the team decides otherwise).</li>
+  </ul>
+  <div class="say">"I'm not fluent in French, so I'd work closely with the French team, and my checklist makes sure nothing goes live in French without their approval."</div>
+</section>
+
+<section id="dealer">
+  <h2><span class="n">10</span>Dealer marketing and the dealer tool</h2>
+  <div class="simple">A brand sells through hundreds of local dealerships. Each dealer has its own social pages. The brand wants dealers to post approved, on-brand content, so it gives them a website (a portal) to download ready-made posts.</div>
+  <h3>What you'd do in the dealer tool</h3>
+  <ul>
+    <li>Upload new approved posts: every size (square, vertical, story) and both languages.</li>
+    <li>Write a short, clear title and description so dealers know what each post is for.</li>
+    <li>Set start and end dates, especially for offers.</li>
+    <li><b>Remove expired content</b>, so no dealer posts an old price or offer.</li>
+    <li>Tell dealers what's new (a short note or newsletter).</li>
+  </ul>
+  <h3>Why it matters</h3>
+  <p>If a dealer posts an expired offer or an old logo, it can mislead customers and hurt the brand. The dealer tool keeps hundreds of local pages consistent.</p>
+  <div class="eg">A holiday campaign starts Monday. On Friday you upload 10 posts (5 sizes × 2 languages) with end dates, check them on the portal, and send dealers a "new this week" note.</div>
+  <h3>Words to know</h3>
+  <ul><li><b>Co-op:</b> money the brand gives dealers to spend on approved local marketing.</li><li><b>OEM:</b> the manufacturer (the brand itself).</li><li><b>Disclaimer / legal line:</b> small print on offers (prices, terms). Never edit it.</li></ul>
+</section>
+
+<section id="dam">
+  <h2><span class="n">11</span>The asset library (DAM)</h2>
+  <div class="simple">DAM means Digital Asset Management: a big searchable library of every final photo, video and ad.</div>
+  <h3>Name every file the same way</h3>
+  <div class="eg mono" style="font-family:'JetBrains Mono',monospace;font-size:14px">BRAND_PRODUCT_CAMPAIGN_ASSET_SIZE_LANG_V#<br>BRAND_SUV_HOLIDAY_SOCIAL_1080x1350_EN_V3<br>BRAND_SUV_HOLIDAY_SOCIAL_1080x1350_FR_V3<br>BRAND_SUV_AWARD_YT-THUMB_1280x720_EN_V1</div>
+  <h3>Tag every file</h3>
+  <p>Brand, product, model year, campaign, platform, size, language, year.</p>
+  <h3>Audit every month</h3>
+  <ul><li>Archive old versions (keep only the latest V#).</li><li>Delete duplicates.</li><li>Remove expired offers.</li><li>Check tags are complete.</li></ul>
+  <div class="say">"One naming rule, required tags, and a monthly audit. Then anyone can find the right file in seconds, in the asset system, the dealer tool and YouTube."</div>
+</section>
+
+<section id="urgent">
+  <h2><span class="n">12</span>Urgent requests (breaking news, awards)</h2>
+  <ol>
+    <li><b>Confirm:</b> what exactly, who approves, by when, which channels.</li>
+    <li><b>Gather:</b> approved wording and assets (English + French).</li>
+    <li><b>Prepare:</b> posts, YouTube if needed, dealer tool if needed.</li>
+    <li><b>Approve:</b> get written sign-off.</li>
+    <li><b>Publish and check:</b> on a phone, both languages.</li>
+    <li><b>Tell the team</b> and log it in the status report.</li>
+  </ol>
+  <div class="warn">Never post anything that hasn't been approved, even under time pressure. Ask, don't guess.</div>
+</section>
+
+<section id="admin">
+  <h2><span class="n">13</span>Reports, agendas and notes</h2>
+  <div class="grid3">
+    <div class="card"><span class="tag">Agenda</span><p>Sent before the meeting: topics, who presents, decisions needed.</p></div>
+    <div class="card"><span class="tag">Meeting notes</span><p>Sent within the hour: decisions, then actions with an <b>owner</b> and a <b>date</b>.</p></div>
+    <div class="card"><span class="tag">Status report</span><p>Weekly: done, in progress, waiting on approval, at risk, next week.</p></div>
+  </div>
+  <div class="eg">Action: "Upload holiday posts to the dealer tool · Durva · Fri Nov 6". Not "Someone should upload the posts."</div>
+</section>
+
+<section id="social">
+  <h2><span class="n">14</span>Social media basics</h2>
+  <ul>
+    <li><b>Platforms:</b> YouTube (video, search), Instagram (Reels, Stories, carousels), Facebook, TikTok, LinkedIn, X.</li>
+    <li><b>Sizes:</b> square 1080×1080, portrait 1080×1350, vertical 1080×1920, YouTube thumbnail 1280×720.</li>
+    <li><b>Community management:</b> replying to comments and DMs (the 3 community managers' job).</li>
+    <li><b>Metrics:</b> reach, impressions, views, engagement (likes, comments, shares, saves), watch time.</li>
+    <li><b>Content calendar:</b> the schedule of what goes out when.</li>
+  </ul>
+</section>
+
+<section id="tools">
+  <h2><span class="n">15</span>Tools they might use</h2>
+  <div class="scroll"><table><thead><tr><th>Task</th><th>Common tools</th></tr></thead><tbody>
+    <tr><td>YouTube</td><td><b>YouTube Studio</b> (almost certain)</td></tr>
+    <tr><td>Dealer tool</td><td>Usually a custom dealer portal built for the brand</td></tr>
+    <tr><td>Asset library</td><td>Bynder, Brandfolder, Acquia DAM, Box, SharePoint, Dropbox</td></tr>
+    <tr><td>Video review</td><td>Frame.io</td></tr>
+    <tr><td>Projects</td><td>Workfront, Asana, Monday.com, Smartsheet</td></tr>
+    <tr><td>Social publishing</td><td>Sprinklr, Sprout Social, Hootsuite</td></tr>
+    <tr><td>PR monitoring</td><td>Meltwater, Cision, Muck Rack</td></tr>
+    <tr><td>Team</td><td>Slack or Teams, Google Workspace or Microsoft 365, Zoom</td></tr>
+  </tbody></table></div>
+  <div class="say">"I haven't used [tool] yet, but I've used [Google Drive / HubSpot / Canva] to organize, tag and track work. I learn tools fast: I got HubSpot certified on my own."</div>
+</section>
+
+<!-- ================= THE ROLE ================= -->
+<section id="jd">
+  <h2><span class="n">16</span>The job post, line by line</h2>
+  <div class="jd"><div class="q">The Coordinator is responsible for operational efficiency, platform logistics, and asset distribution across the account.</div><div class="b"><div>Meaning</div><div>You keep the account's day-to-day running smoothly: the right content, in the right place, at the right time.</div></div></div>
+  <div class="jd"><div class="q">Manage end-to-end YouTube channel postings in English and French, overseeing video formatting, thumbnails, metadata, descriptions, tags, keywords, and captioning.</div><div class="b"><div>Meaning</div><div>You upload every video properly, twice: English and French. See sections 08 and 09.</div><div>Proof</div><div>The YouTube upload checklist on your page.</div></div></div>
+  <div class="jd"><div class="q">Upload and maintain social assets within the dedicated tool for dealer distribution.</div><div class="b"><div>Meaning</div><div>Keep the dealer portal full of the right, current posts. See section 10.</div></div></div>
+  <div class="jd"><div class="q">Upload final creative files into asset management systems using tagging guidelines.</div><div class="b"><div>Meaning</div><div>Save every final file with the right name and labels. See section 11.</div><div>Proof</div><div>The naming rule on your page.</div></div></div>
+  <div class="jd"><div class="q">Routinely audit digital asset management systems to archive or remove redundant assets.</div><div class="b"><div>Meaning</div><div>A monthly clean-up: old versions archived, duplicates gone.</div></div></div>
+  <div class="jd"><div class="q">Coordinate ad-hoc requests, including breaking announcements, awards news, and unexpected brand updates.</div><div class="b"><div>Meaning</div><div>Handle surprises fast and carefully. See section 12.</div></div></div>
+  <div class="jd"><div class="q">Support project managers and account leads with status reports, agendas, meeting notes, and timing updates.</div><div class="b"><div>Meaning</div><div>Keep the managers organized. See section 13.</div></div></div>
+  <div class="jd"><div class="q">Build strong operational relationships across strategy, creative, accounts, public relations and production teams.</div><div class="b"><div>Meaning</div><div>Be the friendly, reliable person every team likes working with.</div></div></div>
+  <div class="jd"><div class="q">Maintain high organization, attention to detail, and a proactive problem-solving attitude.</div><div class="b"><div>Meaning</div><div>Catch small mistakes and fix problems before anyone asks.</div></div></div>
+  <div class="jd"><div class="q">1-2 years of agency or administrative experience · practical familiarity with social media · strong organizational, multi-tasking and time-management skills.</div><div class="b"><div>Meaning</div><div>Junior is fine. Show you're organized and know social.</div><div>Proof</div><div>Missive, Bsquaree, Rewynd, freelance work; the page you built.</div></div></div>
+</section>
+
+<section id="day">
+  <h2><span class="n">17</span>A day in the role</h2>
+  <table><thead><tr><th>Time</th><th>What you'd do</th></tr></thead><tbody>
+    <tr><td>9:00</td><td>Check email and Slack; list today's tasks</td></tr>
+    <tr><td>9:30</td><td>Upload 2 videos to YouTube (English + French) with captions and thumbnails</td></tr>
+    <tr><td>11:00</td><td>Team meeting: take notes, send actions with owners and dates</td></tr>
+    <tr><td>12:00</td><td>Upload this week's posts to the dealer tool; remove expired offers</td></tr>
+    <tr><td>2:00</td><td>Name and tag new files in the asset library</td></tr>
+    <tr><td>3:00</td><td>🚨 Award news: approved wording → English + French → posted and shared with dealers by 5</td></tr>
+    <tr><td>4:30</td><td>Update the status report and timeline</td></tr>
+    <tr><td>5:00</td><td>Plan tomorrow</td></tr>
+  </tbody></table>
+</section>
+
+<section id="ninety">
+  <h2><span class="n">18</span>Your first 90 days</h2>
+  <div class="grid3">
+    <div class="card"><span class="tag">Days 1-30 · Learn</span><p>The brands, the tools, naming rules, approval paths. Shadow every upload. Meet every team.</p></div>
+    <div class="card"><span class="tag">Days 31-60 · Own</span><p>Run YouTube uploads and the dealer tool end to end with the checklist. Status reports on time, every week.</p></div>
+    <div class="card"><span class="tag">Days 61-90 · Improve</span><p>First full asset-library audit. Suggest one process improvement, like a faster urgent-news workflow.</p></div>
+  </div>
+</section>
+
+<section id="you">
+  <h2><span class="n">19</span>Your story and STAR answers</h2>
+  <h3>60-second intro</h3>
+  <div class="say">"I'm a content marketer who loves the organized side of marketing. I studied business analysis at George Brown, which is all about clean systems and documentation, and digital and content marketing at York. At Rewynd Snacks I built and ran the content calendar that kept campaigns on time. At Missive Digital I wrote SEO content that helped a client get 73% more inquiries. At Bsquaree I managed outreach, follow-ups and stakeholder updates. For this role I already made two things: a YouTube upload checklist for English and French, and an asset naming rule."</div>
+  <h3>STAR = Situation, Task, Action, Result</h3>
+  <p>Fill each with a true example. Keep each answer to about one minute.</p>
+  <div class="scroll"><table><thead><tr><th>Story</th><th>Use it for</th></tr></thead><tbody>
+    <tr><td><b>Studying, working and freelancing at once</b> (after moving to Canada)</td><td>Many deadlines, stress, prioritizing, "relentless"</td></tr>
+    <tr><td><b>The Rewynd content calendar</b></td><td>Improving a process, organization, teamwork (contributed to a 40% sales increase)</td></tr>
+    <tr><td><b>Missive SEO content</b> (73% more inquiries)</td><td>Results, attention to detail, social and search know-how</td></tr>
+    <tr><td><b>Bsquaree outreach and follow-ups</b></td><td>Stakeholders, communication, tracking many threads</td></tr>
+    <tr><td><b>A freelance same-day request</b></td><td>Urgent requests, staying calm</td></tr>
+    <tr><td><b>A mistake you caught</b> (wrong date, link or file)</td><td>Attention to detail; then you added a checklist step</td></tr>
+    <tr><td><b>Getting HubSpot certified on your own</b></td><td>Learning tools fast</td></tr>
+  </tbody></table></div>
+</section>
+
+<!-- ================= INTERVIEW ================= -->
+<section id="qa">
+  <h2><span class="n">20</span>Questions they may ask</h2>
+  <p>Tap a question to see a strong answer. Say each out loud. <span class="lvl l1">YOU</span><span class="lvl l2">BEHAVIOURAL</span><span class="lvl l3">ROLE</span><span class="lvl l4">SCENARIO</span></p>
+  <div id="qaList"></div>
+</section>
+
+<section id="ask">
+  <h2><span class="n">21</span>Questions you ask</h2>
+  <ol>
+    <li>"Which brands and channels will this role support first?"</li>
+    <li>"Who writes the French titles and descriptions, and who approves them?"</li>
+    <li>"How often do dealers get new assets, and how do they find out?"</li>
+    <li>"With ten new roles, how will the coordinator work with the community managers and content creator day to day?"</li>
+    <li>"Which tools does the team use for the dealer portal, the asset library and project tracking?"</li>
+    <li>"What would the first 90 days look like?"</li>
+    <li>"A year from now, what would make you say hiring me was a great decision?"</li>
+    <li>"What are the next steps?"</li>
+  </ol>
+  <div class="warn">Ask 3 or 4. Always end with "What are the next steps?"</div>
+</section>
+
+<section id="money">
+  <h2><span class="n">22</span>Salary and logistics</h2>
+  <ul><li><b>Salary:</b> the post says $50K to $55K. "The posted range works for me."</li><li><b>Hybrid:</b> 720 King St. W., Toronto.</li><li><b>Perks:</b> mental health benefits, no client meeting Mondays, DE&amp;I groups, training.</li><li><b>Start date and work authorization:</b> have a clear, true one-line answer.</li></ul>
+  <ul class="check">
+    <li><label><input type="checkbox"> Join the Zoom 5 minutes early</label></li>
+    <li><label><input type="checkbox"> Quiet room, good light, phone on silent</label></li>
+    <li><label><input type="checkbox"> Your Rethink page open, ready to share your screen</label></li>
+    <li><label><input type="checkbox"> Intro + 3 questions on a sticky note</label></li>
+    <li><label><input type="checkbox"> Water, and a smile</label></li>
+  </ul>
+</section>
+
+<section id="after">
+  <h2><span class="n">23</span>After the call</h2>
+  <p>Send within 2 hours (don't name the client):</p>
+  <div class="card">Hi Sara,<br><br>Thank you for your time today! I really enjoyed hearing about [one thing she said], and I'm even more excited about supporting the team on the new account.<br><br>Looking forward to the next steps.<br><br>Durva</div>
+</section>
+
+<section id="gloss">
+  <h2><span class="n">24</span>Glossary</h2>
+  <input class="gsearch" id="gs" placeholder="Search a word, like DAM, SRT or co-op…">
+  <div class="gloss" id="gl"></div>
+</section>
+
+<section id="cards">
+  <h2><span class="n">25</span>Flashcards</h2>
+  <p>Read the word, say the meaning out loud, then tap to check.</p>
+  <div class="fc"><div class="flip" id="flip"><div class="in"><div class="f" id="ff"></div><div class="bk" id="fb"></div></div></div>
+    <div class="fcb"><button id="fPrev">← Back</button><button class="p" id="fFlip">Flip</button><button id="fNext">Next →</button><button id="fShuf">Shuffle</button></div><div class="mono" id="fCount"></div></div>
+</section>
+
+<footer>A personal study guide in plain English. Agency facts come from public sources (Strategy, LBB, Adweek, the job post). Client details are kept private.</footer>
+</main>
+</div>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  // progress + toc
+  const links = [...document.querySelectorAll("nav.toc a")];
+  const secs = links.map(a => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+  addEventListener("scroll", () => {
+    const h = document.documentElement; $("prog").style.width = (scrollY / (h.scrollHeight - innerHeight) * 100) + "%";
+    let cur = secs[0]; secs.forEach(s => { if (s.getBoundingClientRect().top < 120) cur = s; });
+    links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + cur.id));
+  }, { passive: true });
+  $("menu").onclick = () => $("toc").classList.toggle("open");
+  links.forEach(a => a.addEventListener("click", () => $("toc").classList.remove("open")));
+
+  // Q&A
+  const QA = [
+    [1, "Walk me through your background.", "Use the 60-second intro in section 19: George Brown + York, Rewynd calendar, Missive 73%, Bsquaree, and the checklist + naming rule you made for this role."],
+    [1, "Why Rethink? Why PR and social?", "\"Rethink is Canada's best independent agency, and Rethink PR is new and growing. I want to learn where the work is brilliant, and in PR and social, timing and accuracy are everything. That's what I'm good at.\""],
+    [1, "Why a coordinator role, when your background is content?", "\"I love the organized side: systems, checklists and making things run on time. My business analysis studies are all about that. And the coordinator sees every team, so it's the best way to learn the whole agency.\""],
+    [1, "What do you know about our work?", "Cannes 2026 Independent Agency of the Year; Heinz 'Look Familiar?' Grand Prix; IKEA 'Sleep Talk Reviews'; Rethink PR launched 2024 and grew about 30% in year one; Sara's 'Molson See My Name' (PR Campaign of the Year)."],
+    [1, "Where do you see yourself in 2 to 3 years?", "\"Growing with this new team: owning bigger parts of the account, maybe community management or account management, and helping train the next coordinator.\""],
+    [1, "Tell me something interesting about you (Rethinkers are interested and interesting).", "\"I moved to Canada with one bag and too many plans, and studied, worked and freelanced at the same time. And for companies I really want to work with, I build something before I apply. Like the page I made for Meredith.\""],
+    [2, "Tell me about a time you managed many deadlines at once.", "S: studying, working and freelancing at once. T: hit every deadline. A: one calendar, a weekly priority list, big tasks split into daily steps, early heads-up when something might slip. R: [your real result]."],
+    [2, "Tell me about a time you caught a mistake before it went out.", "Give a real example (wrong date, link, name or file). Then: you fixed it, told the person, and added a checklist step so it couldn't happen again."],
+    [2, "Tell me about an urgent, last-minute request.", "A freelance client needed something the same day. You confirmed exactly what, who approves and by when; moved lower priorities; sent it early for review. Result: on time, client happy."],
+    [2, "Tell me about working with someone difficult or with many teams.", "Rewynd or Bsquaree: different people, different priorities. You learned how each person likes to receive requests, gave clear updates, and wrote everything down. Smoother handoffs."],
+    [2, "Tell me about a time you improved a process.", "The Rewynd content calendar: from ad-hoc to one shared calendar with owners and dates. Campaigns ran on time and contributed to a 40% sales increase."],
+    [2, "Tell me about learning a new tool quickly.", "HubSpot certification on your own, or Figma/Canva/WordPress for a client: you learned by doing a real task in week one, then shipped [result]."],
+    [2, "Tell me about critical feedback you received.", "A real example: you listened, asked questions, made the changes the same day, and used the lesson next time."],
+    [2, "How do you handle confidential information?", "\"Need-to-know only, never post about client work before it's public, and follow the client's rules exactly.\""],
+    [2, "How do you handle stress or a very busy week?", "\"Write everything down, sort by deadline and impact, do the urgent things first, and tell people early if something might slip. Staying calm is part of the job.\""],
+    [3, "Have you used YouTube Studio? Walk me through an upload.", "Be honest about how much you've used it. Then walk the checklist: final file, title, description, tags, thumbnail, playlist, captions (SRT) in both languages, end screen, visibility/schedule, phone check, share link, log it."],
+    [3, "Do you speak French? How would you handle French uploads?", "\"Not fluently. The French team writes or approves French copy; my job is making sure the right approved version goes up, proofread, with French captions, and nothing goes live without its pair.\""],
+    [3, "What makes a good title, description and thumbnail?", "Title: clear, follows one pattern, ends with the brand. Description: first two lines matter most, links, legal lines. Thumbnail: readable on a phone, on brand, 1280×720."],
+    [3, "How would you keep a big asset library organized?", "One naming rule (BRAND_PRODUCT_CAMPAIGN_ASSET_SIZE_LANG_V#), required tags, monthly audit to archive old versions and duplicates."],
+    [3, "What would you put in a weekly status report?", "Done, in progress, waiting on approval, at risk, next week. Short, with owners and dates."],
+    [3, "How do you take good meeting notes?", "Decisions first, then actions with an owner and a date. Sent within the hour."],
+    [3, "Which tools have you used?", "Name what's true (Google Drive, HubSpot, Canva, Figma, WordPress, Meta Business Suite...). For ones you haven't used: \"I haven't used it yet, but I learn tools fast.\""],
+    [4, "Award news comes in at 4 PM on a Friday. What do you do?", "Confirm facts, approver, deadline and channels → approved wording + assets in English and French → prepare posts, YouTube, dealer tool → written sign-off → publish and check on a phone → tell the team → log it."],
+    [4, "Two leads give you urgent tasks at the same time.", "\"I'd tell both quickly, ask which matters most for the client today, or ask my manager to decide. Then I'd give each a clear time it'll be done.\""],
+    [4, "A dealer says they can't find an asset.", "Search by the naming rule; check it was uploaded and tagged; send the direct link; if it was missing or mis-tagged, fix it and check similar files."],
+    [4, "You spot a typo in a French title after the video is live.", "Fix it right away in YouTube Studio (titles can be edited), tell the team, and add a French proofread step if it isn't already there."],
+    [4, "A client asks for something outside the plan.", "Note it, check with the account lead whether it's in scope, and give the client a clear answer and timeline. Never just say yes or no on your own."],
+    [4, "You're new and don't know the answer.", "\"I'd say: good question, let me check and come back to you today. Then I'd ask the right person and write down the answer for next time.\""],
+    [1, "Salary expectations?", "\"The posted range of $50K to $55K works for me.\""],
+    [1, "Do you have any questions for us?", "Always yes. Pick 3 or 4 from section 21, and end with: \"What are the next steps?\""]
+  ];
+  const L = { 1: ["l1", "YOU"], 2: ["l2", "BEHAVIOURAL"], 3: ["l3", "ROLE"], 4: ["l4", "SCENARIO"] };
+  $("qaList").innerHTML = QA.map(([l, q, a]) => `<details><summary><span><span class="lvl ${L[l][0]}">${L[l][1]}</span>${q}</span></summary><div>${a}</div></details>`).join("");
+
+  // glossary
+  const G = [
+    ["Rethink", "Agency", "Canada's best-known independent ad agency, founded 1999 in Vancouver."],
+    ["Rethink PR", "Agency", "Rethink's public relations team, launched November 2024."],
+    ["Independent agency", "Agency", "Owned by its partners, not by a global holding company."],
+    ["Account team", "Agency", "The people who run the client relationship, timelines and budget."],
+    ["Group Account Director", "Agency", "The senior lead over a group of client accounts (Sara's title)."],
+    ["Retainer", "Agency", "A client paying monthly for ongoing work."],
+    ["Always-on", "Agency", "Working for a client every week, all year."],
+    ["Scope", "Agency", "What the client is paying for. Extra work is out of scope."],
+    ["Brief", "Agency", "A document explaining a task: goal, audience, deliverables, deadline."],
+    ["Deliverable", "Agency", "A finished thing you hand over."],
+    ["Sign-off", "Agency", "Written approval before something goes live."],
+    ["WIP / hot list", "Agency", "The list of work in progress, reviewed in meetings."],
+    ["PR", "Marketing", "Public relations: getting earned attention in the news and on social."],
+    ["Earned media", "Marketing", "Attention you don't pay for: news, shares, awards."],
+    ["Owned media", "Marketing", "Channels the brand controls: website, YouTube, Instagram."],
+    ["Paid media", "Marketing", "Space you pay for: ads."],
+    ["Community manager", "Social", "Replies to comments and DMs and watches conversations."],
+    ["Content calendar", "Social", "The schedule of what gets posted when."],
+    ["Engagement", "Social", "Likes, comments, shares and saves."],
+    ["Reach / impressions", "Social", "People who saw it / times it was shown."],
+    ["YouTube Studio", "YouTube", "The back office where every video is set up."],
+    ["Metadata", "YouTube", "All information about a video: title, description, tags, category."],
+    ["Thumbnail", "YouTube", "The cover image, 1280×720, readable on a phone."],
+    ["Tags", "YouTube", "Keywords that help YouTube understand and find a video."],
+    ["Captions / SRT", "YouTube", "Subtitles; SRT is the file format you upload."],
+    ["Playlist", "YouTube", "A group of related videos."],
+    ["End screen", "YouTube", "The last seconds showing the next video or a link."],
+    ["Unlisted", "YouTube", "Anyone with the link can watch; not public in search."],
+    ["Scheduled", "YouTube", "Set to go public at a chosen time."],
+    ["Shorts", "YouTube", "Vertical videos under a minute."],
+    ["Bilingual", "French", "In English and French."],
+    ["Adaptation", "French", "Rewriting copy so it sounds natural in French, not word for word."],
+    ["The pair rule", "French", "Nothing goes live in one language without the other ready."],
+    ["Dealer", "Dealers", "A local business that sells the brand's products."],
+    ["Dealer portal / asset tool", "Dealers", "A website where dealers download approved posts."],
+    ["Co-op", "Dealers", "Money a brand gives dealers for approved local marketing."],
+    ["OEM", "Dealers", "The manufacturer, the brand itself."],
+    ["Disclaimer", "Dealers", "Legal small print on offers. Never edit it."],
+    ["Expired offer", "Dealers", "A deal whose end date has passed. Remove it from the portal."],
+    ["DAM", "Assets", "Digital Asset Management: the searchable file library."],
+    ["Naming convention", "Assets", "One way to name every file, e.g. BRAND_PRODUCT_CAMPAIGN_SIZE_LANG_V#."],
+    ["Tagging", "Assets", "Labels on a file: brand, product, campaign, language, size."],
+    ["Version (V#)", "Assets", "The edit number. Keep only the latest live."],
+    ["Audit", "Assets", "A regular clean-up to archive old and duplicate files."],
+    ["Agenda", "Admin", "Topics and decisions needed, sent before a meeting."],
+    ["Meeting notes", "Admin", "Decisions and actions with owner and date, sent within the hour."],
+    ["Status report", "Admin", "Weekly: done, in progress, waiting, at risk, next."],
+    ["STAR", "Interview", "Situation, Task, Action, Result: how to answer behavioural questions."],
+    ["Workfront / Asana", "Tools", "Project tools for tasks, owners and dates."],
+    ["Sprinklr / Sprout", "Tools", "Social publishing and community tools."],
+    ["Frame.io", "Tools", "A tool for reviewing videos with comments."],
+    ["Bynder / Brandfolder", "Tools", "Asset library (DAM) tools."]
+  ];
+  function grender(q = "") { q = q.toLowerCase(); $("gl").innerHTML = G.filter(g => (g[0] + g[1] + g[2]).toLowerCase().includes(q)).map(g => `<div><span class="c">${g[1].toUpperCase()}</span><b>${g[0]}</b>${g[2]}</div>`).join("") || "<div>No match.</div>"; }
+  $("gs").addEventListener("input", e => grender(e.target.value)); grender();
+
+  // flashcards
+  let deck = G.slice(), fi = 0;
+  function frender() { const [w, c, m] = deck[fi]; $("flip").classList.remove("on"); $("ff").innerHTML = `<div>${w}<small>${c.toUpperCase()}</small></div>`; $("fb").textContent = m; $("fCount").textContent = `${fi + 1} / ${deck.length}`; }
+  $("flip").onclick = $("fFlip").onclick = () => $("flip").classList.toggle("on");
+  $("fNext").onclick = () => { fi = (fi + 1) % deck.length; frender(); };
+  $("fPrev").onclick = () => { fi = (fi - 1 + deck.length) % deck.length; frender(); };
+  $("fShuf").onclick = () => { deck.sort(() => Math.random() - .5); fi = 0; frender(); };
+  addEventListener("keydown", e => { if (e.target.tagName === "INPUT") return; if (e.key === "ArrowRight") $("fNext").click(); if (e.key === "ArrowLeft") $("fPrev").click(); });
+  frender();
+})();
+</script>
+</body>
+</html>
